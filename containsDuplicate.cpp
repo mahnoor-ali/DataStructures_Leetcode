@@ -21,6 +21,7 @@ public:
 
 // USING UNORDERED MAP in STL
 // increase the count of the element in the map. If an element is already present (i.e it's count is already 1 in the map), then return true
+// Time Complexity: O(n)
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
