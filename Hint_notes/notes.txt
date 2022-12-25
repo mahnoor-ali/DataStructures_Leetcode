@@ -3,3 +3,8 @@ A BFS will find the shortest path between the starting point and any other reach
 
 Disadvantages
 A BFS on a binary tree generally requires more memory than a DFS.
+
+
+Graph:
+1. Queue for BFS
+2. Stack for DFS
