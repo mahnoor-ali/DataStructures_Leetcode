@@ -8,3 +8,12 @@ A BFS on a binary tree generally requires more memory than a DFS.
 Graph:
 1. Queue for BFS
 2. Stack for DFS
+
+LINKEDLIST:
+1. Insert at beginning: O(1) //bcz head pointer available
+2. Insert in between: O(n)   //bcz traversing required
+3. Insert at end: O(n)      // no tail pointer in singly LinkedList
+4. Insert after a node: O(1) //no traversing required
+5. Remove a node b/w 2 nodes: O(1) 
+// delete ith node(n2).. loop to get i-1(n1)... 
+n0->n1->n2->n3 (remove n2) => p=n1->next; n1->next=n2->next; delete p;  ==> n1->n3
