@@ -28,6 +28,6 @@ int divide(int dividend, int divisor)
             quotient+=pow(2,shifts);
         }
 
-    return isQuotientPositive? quotient: -quotient;
+  return isQuotientPositive? quotient: -quotient;
 }
 };
