@@ -10,7 +10,6 @@ public:
             inc &= A[i] <= A[i + 1];
             dec &= A[i] >= A[i + 1];
         }
-        // Return true if the array is either increasing or decreasing
         return inc || dec;
     }
 };
