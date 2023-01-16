@@ -1,0 +1,5 @@
+1. Read statements carefully.
+2. Find out all the conditions and edge cases by reading problem statement. Reading should be so good that you identify edge cases quickly from requirement.
+3. Then design a generic solution that accomodates this edge case
+
+
