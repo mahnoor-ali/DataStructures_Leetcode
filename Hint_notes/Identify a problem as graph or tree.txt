@@ -1,0 +1,13 @@
+Here are a few things to look for when trying to identify whether a problem in competitive programming is related to trees or graphs:
+
+---- Trees ---
+If the problem mentions a hierarchical structure, like a family tree or a file system.
+If the problem involves traversing a set of nodes in a specific order, like inorder or preorder.
+If the problem mentions a root node or parent-child relationships.
+
+
+--- Graphs ---
+If the problem mentions a set of nodes and edges connecting them.
+If the problem involves finding the shortest path between two nodes.
+If the problem involves finding connected components or detecting cycles.
+If the problem mention about finding spanning tree.
