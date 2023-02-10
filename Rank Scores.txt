@@ -1,0 +1,10 @@
+SELECT score,
+dense_rank() OVER (ORDER BY score DESC) AS 'rank'
+FROM scores
+ORDER BY score DESC
+
+
+-- Explanation:
+The dense_rank() function is then used to calculate the rank of each record, based on the score. 
+    The dense_rank() function assigns the same rank to records with the same score and assigns the next rank to the next unique score.
+   The OVER clause specifies the ordering of the scores by the score in descending order (ORDER BY score DESC).
