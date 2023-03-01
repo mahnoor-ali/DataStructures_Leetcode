@@ -30,3 +30,39 @@ public:
         return floodFill(image, sr, sc, color, m, n, x);
     }
 };
+
+//-------------------------------------------------------------
+
+//Using BFS Algorithm
+class Solution {
+public:
+    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color)
+    {
+        int oldColor = image[sr][sc];
+        int m = image.size();
+        int n = image[0].size();
+        if(color==oldColor)
+          return image;
+        
+        vector<vector<int>> visited (m, (vector<int>(n,0)));
+        queue<pair<int, int>> q;
+        q.push({sr, sc});
+
+        while(!q.empty())
+        {
+            auto [r,c] = q.front();
+            q.pop();
+            if(r>=m || r<0 || c>=n || c<0 || oldColor!=image[r][c] || visited[r][c])
+              continue;
+            
+            visited[r][c]=1;
+            image[r][c]= color;
+
+            q.push({r,c+1});
+            q.push({r+1,c});
+            q.push({r,c-1});
+            q.push({r-1,c});
+        }        
+        return image;
+    }
+};
