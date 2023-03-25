@@ -2,7 +2,7 @@
     { 
         int sum=0, maxSize=0, diff;
         map<int, int> m;
-        m[0]=-1;
+        m[0]=-1; //index i=-1 -> sum=0
         for(int i=0; i<N; i++)
         {
           sum+=a[i];
